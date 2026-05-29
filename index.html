@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code for Basic</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, system-ui, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fb;
+      color: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, #ffffff 0%, #eef2ff 100%);
+    }
+
+    header {
+      padding: 4rem 1.5rem 2rem;
+      text-align: center;
+      background: #4338ca;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      letter-spacing: -0.04em;
+    }
+
+    header p {
+      margin: 1rem auto 0;
+      max-width: 34rem;
+      font-size: 1.15rem;
+      opacity: 0.88;
+    }
+
+    main {
+      width: min(1080px, calc(100% - 2rem));
+      margin: -2rem auto 2rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      padding: 1.5rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      background: #fafafa;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: #374151;
+    }
+
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0.95rem 1.4rem;
+      border-radius: 999px;
+      text-decoration: none;
+      background: #4f46e5;
+      color: white;
+      font-weight: 600;
+      transition: transform 0.15s ease, background-color 0.15s ease;
+    }
+
+    a.button:hover {
+      background: #4338ca;
+      transform: translateY(-1px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.25rem;
+      font-size: 0.95rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Code for Basic</h1>
+    <p>Your starting page for simple, modern front-end projects — built with clean HTML, CSS, and a friendly structure.</p>
+  </header>
+
+  <main>
+    <section>
+      <p>Welcome to the Code for Basic index page. This project is a lightweight starter page created for easy browsing and quick editing.</p>
+    </section>
+
+    <div class="grid">
+      <article class="card">
+        <h2>Learn the basics</h2>
+        <p>Use this page as a foundation to practice HTML structure, responsive layout, and styling without frameworks.</p>
+      </article>
+
+      <article class="card">
+        <h2>Build fast</h2>
+        <p>Add new sections, code samples, or navigation in minutes. The design is simple and works on mobile, tablet, and desktop.</p>
+      </article>
+
+      <article class="card">
+        <h2>Share your work</h2>
+        <p>Include links to project files like <code>hello.txt</code> or a README so visitors can explore the repository.</p>
+      </article>
+    </div>
+
+    <section style="margin-top: 1.5rem;">
+      <h2 style="margin-bottom: 0.75rem;">Getting started</h2>
+      <p>Open <code>index.html</code> in your browser to preview the site. Edit the content directly and refresh to see changes instantly.</p>
+      <a class="button" href="README.md">View README</a>
+    </section>
+  </main>
+
+  <footer>
+    Made for basic front-end learning and project demos.
+  </footer>
+</body>
+</html>
